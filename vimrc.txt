@@ -1,0 +1,15 @@
+set nocompatible
+set ignorecase
+set textwidth=75
+set autoindent
+ 
+set tabstop=3
+set shiftwidth=3
+set softtabstop=3
+set expandtab
+
+set title
+set history=1000
+set undolevels=1000
+set number
+set numberwidth=4
