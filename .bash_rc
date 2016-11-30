@@ -1,2 +1,24 @@
-alias gitf=cd C:\Users\Michael\Git\
-alias unix=ssh mwong56@unix3.csc.calpoly.edu
+defaults write com.apple.Terminal CopyAttributesProfile com.apple.Terminal.no-attributes ## Don't copy text formatting
+
+export OWL=/Users/mwong/git/owl
+export PATH=${PATH}:/Users/mwong/Library/Android/sdk/platform-tools
+export PATH=${PATH}:/Users/mwong/Git/pytwilio.fab/venv/bin
+eval "$(/Users/mwong/git/owl/bin/owl init -)"
+
+alias kill='killall -9 java'
+eval "$(rbenv init -)"
+
+alias gs='git status'
+alias ga='git add -A'
+alias gm='git commit'
+alias gc='git diff --name-only --diff-filter=U' # See merge conflict files
+
+# Color my terminal
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+alias ls='ls -GFh'
+
+
+alias gitf='cd ~/Git'
+alias mvn-st='mvn -Dmaven.test.skip=true'
