@@ -1,17 +1,22 @@
-defaults write com.apple.Terminal CopyAttributesProfile com.apple.Terminal.no-attributes ## Don't copy text formatting
+xset m 0 0
+alias pbcopy="xclip -sel clip"
+export OWL=/home/michael/Git/owl
+eval "$(/home/michael/Git/owl/bin/owl init -)"
 
-export OWL=/Users/mwong/git/owl
-export PATH=${PATH}:/Users/mwong/Library/Android/sdk/platform-tools
+export PATH=${PATH}:/opt/pycharm-community-2017.3/bin
+export PATH=${PATH}:/opt/idea-IC-172.4574.11/bin
+export PATH=${PATH}:/opt/RubyMine-2017.3/bin
+export PATH=/usr/local/bin:$PATH
 export PATH=${PATH}:/Users/mwong/Git/pytwilio.fab/venv/bin
-eval "$(/Users/mwong/git/owl/bin/owl init -)"
+export PATH=${PATH}:~/go/bin
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 alias kill='killall -9 java'
-eval "$(rbenv init -)"
 
 alias gs='git status'
 alias ga='git add -A'
 alias gm='git commit'
-alias gc='git diff --name-only --diff-filter=U' # See merge conflict files
+alias gc='git diff --name-only --diff-filter=U' # See merge conflict files   
 
 # Color my terminal
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
@@ -22,3 +27,6 @@ alias ls='ls -GFh'
 
 alias gitf='cd ~/Git'
 alias mvn-st='mvn -Dmaven.test.skip=true'
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
