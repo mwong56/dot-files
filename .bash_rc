@@ -11,7 +11,7 @@ export PATH=${PATH}:/Users/mwong/Git/pytwilio.fab/venv/bin
 export PATH=${PATH}:~/go/bin
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
-alias kill='killall -9 java'
+alias killj='killall -9 java'
 
 alias gs='git status'
 alias ga='git add -A'
