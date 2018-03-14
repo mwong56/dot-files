@@ -1,0 +1,4 @@
+  AlternateTab
+  Block Caribou
+  Suspend Button
+  Dash to dock
